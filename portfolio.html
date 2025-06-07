@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saransh Rajput | Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Hello, I am <span class="name">Saransh Rajput</span></h1>
+    <p>Welcome to my portfolio website.</p>
+  </section>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img
+        id="profile-image"
+        src="IMG_2353.jpeg"
+        alt="Saransh Rajput"
+      />
+      <p id="bio">
+        Bachelor’s in Computer Science (BCA) student with a basic understanding of Java,
+        Python, and C++. Passionate about software development, AI, and
+        problem-solving, eager to learn and improve. Gaining experience in teamwork and
+        technical skills. Looking for opportunities at your company, contribute, and
+        grow in a cutting-edge environment.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-icons">
+      <div class="skill-icon-wrapper" tabindex="0" aria-label="Java">
+        <i class="skill-icon fab fa-java"></i>
+        <div class="skill-tooltip">Java</div>
+      </div>
+      <div class="skill-icon-wrapper" tabindex="0" aria-label="Python">
+        <i class="skill-icon fab fa-python"></i>
+        <div class="skill-tooltip">Python</div>
+      </div>
+      <div class="skill-icon-wrapper" tabindex="0" aria-label="C++">
+        <i class="skill-icon fas fa-code"></i>
+        <div class="skill-tooltip">C++</div>
+      </div>
+      <div class="skill-icon-wrapper" tabindex="0" aria-label="HTML">
+        <i class="skill-icon fab fa-html5"></i>  
+        <div class="skill-tooltip">HTML</div>
+      </div>
+      <div class="skill-icon-wrapper" tabindex="0" aria-label="CSS">
+        <i class="skill-icon fab fa-css3-alt"></i> 
+        <div class="skill-tooltip">CSS</div>
+      </div>
+      <div class="skill-icon-wrapper" tabindex="0" aria-label="JavaScript">
+        <i class="skill-icon fab fa-js-square"></i>
+        <div class="skill-tooltip">JavaScript</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card" tabindex="0" aria-label="Project One">
+        <h3>Image Gallery</h3>
+        <p>A responsive image gallery built using HTML, CSS, and JavaScript. It allows users to view a collection of images in a clean layout with interactive navigation features like next/previous buttons and image zoom. Perfect for showcasing visual work or photography..</p>
+      </div>
+      <div class="project-card" tabindex="0" aria-label="Project Two">
+        <h3>Calculator App</h3>
+        <p>A basic calculator web app that performs fundamental arithmetic operations like addition, subtraction, multiplication, and division. Designed with a user-friendly interface using HTML and CSS, and powered by JavaScript for real-time calculations..</p>
+      </div>
+      <div class="project-card" tabindex="0" aria-label="Project One">
+        <h3>Personal Portfolio Website</h3>
+        <p>A modern and responsive portfolio website created with HTML, CSS, and JavaScript. It highlights my skills, projects, resume, and educational background. Includes interactive elements and a clean layout to present myself professionally online..</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education -->
+  <section id="experience">
+    <h2>Experience & Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Bachelor’s in Computer Science (BCA)</h3>
+        <span>2024 - Present</span>
+        <ul>
+          <li>Currently pursuing BCA degree, learning core programming languages and software development skills.</li>
+        </ul>
+      </div>
+  
+      <div class="timeline-item">
+        <h3>Internship at ABC Company</h3>
+        <span>Summer 2025</span>
+        <ul>
+          <li>Worked as a software development intern, contributed to web applications and enhanced teamwork experience.</li>
+        </ul>
+      </div>
+  
+      <div class="timeline-item">
+        <h3>Senior Secondary Education (12th Grade)</h3>
+        <span>2022 - 2023</span>
+        <ul>
+          <li>Completed senior secondary education with a focus on Commerce Tream.</li>
+          <li>Developed analytical and problem-solving skills through subjects .</li>
+        </ul>
+      </div>
+  
+      <div class="timeline-item">
+        <h3>Secondary Education (10th Grade)</h3>
+        <span>2020 - 2021</span>
+        <ul>
+          <li>Successfully completed secondary education with strong academic performance.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Resume Download -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <a href="Saransh_Resume.pdf" target="_blank" class="btn" download>Download Resume</a>
+  </section>
+  
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required minlength="2" />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p id="form-message" role="alert" aria-live="polite"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Saransh Rajput</p>
+    <div class="social-links" aria-label="Social media links">
+      <a href="https://github.com/Saransh1301" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/saransh-rajput-535248311/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:saranshrajput1301@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
